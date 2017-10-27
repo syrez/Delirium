@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+header {
+    background: url("./img/delirium.jpg") center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+#header_text {
+    margin: 150px auto;
+    text-align: center;
+    width: 40%;
+}
+
+#header_text h1 {
+    color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    font-family: lobster;
+    font-size: 5em;
+}
+
+#header_text p {
+    margin-top: 25px;
+    color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    font-size: 1em;
+    line-height: 2em;
+    font-family:raleway;
+}
+
+#header_overlay {
+    background: rgba(14, 6, 52, 0.80);
+    height: 100%;
+}
+
+#nav_bg {
+    width: 100%;
+}
+
+#menu {
+    padding-top: 40px;
+    display: flex;
+    height: 8vh;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+#menu li {
+    font-size: 1em;
+    font-weight: 700;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.82);
+    font-family: "raleway";
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+#about {
+    padding: 60px 25px;
+    display: flex;
+    align-items: center;
+}
+
+#about #about_img {
+    height: 100%;
+    width: 50%;
+}
+
+#about_img img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    /*border-radius: 100px;*/
+    box-shadow: 10px 10px 50px rgba(23, 23, 23, 0.16);
+}
+
+#about_img:after {
+    content: " ";
+    margin-top: -180px;
+    position: absolute;
+    width: 250px;
+    z-index: -1;
+    height:200px;
+    background: goldenrod;
+}
+
+
+
+#about #about_desc {
+    width: 50%;
+    text-align: center;
+    min-width: 250px;
+    padding: 0 15px;
+}
+
+#about #about_desc h1 {
+    font-family: lobster;
+    font-size: 3em;
+    color: rgb(27, 11, 91);
+    margin-bottom:20px;
+}
+
+#about #about_desc h1:after {
+   content: " ";
+    position: absolute;
+    margin-left:-180px;
+    z-index: -1;
+    width: 60px;
+    height:60px;
+    background: goldenrod;
+    border-radius: 100px;
+}
+
+#about #about_desc p {
+    font-family: raleway;
+    font-weight: 500;
+    font-size: 0.9em;
+    color: #060606;
+    line-height: 1.8em;
+}
+
+#wrapper {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+    #wrapper {
+        width: 90vw;
+    }
+
+    #about {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    #about #about_img img {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    #about #about_img {
+        width: 100%;
+    }
+
+    #about #about_desc {
+        width: 100%;
+        min-width: 0;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    #about_img:after {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        height: 50vh;
+    }
+
+    #header_text {
+        margin-top:40px;
+        width: 80%;
+    }
+
+    #header_text h1{
+        font-size:2em;
+    }
+
+    #header_text p{
+        font-size:0.8em;
+    }
+
+    #wrapper {
+        margin: 0;
+        width: 100%;
+    }
+
+    #about #about_img {
+        width: 100%;
+    }
+
+    #about #about_desc {
+        width: 100%;
+    }
+
+    #about_img img {
+        width: 100%;
+    }
+
+    #about #about_desc {
+        width: 100%;
+    }
+
+    .about {
+        flex-wrap: wrap;
+    }
+
+    #menu {
+        padding-top:15px;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #menu li {
+        font-size: 0.5em;
+        text-align: center;
+        line-height:2em;
+    }
+}
+
