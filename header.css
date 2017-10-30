@@ -26,9 +26,10 @@ header {
 }
 
 #header_text {
-    margin: 10vh auto 45vh;
+    margin: 10vh auto ;
     text-align: center;
     width: 40%;
+    padding-bottom: 45vh;
 
 }
 
@@ -226,6 +227,7 @@ header {
 
     #wrapper {
         width: 90vw;
+
     }
 
     #header_text {
@@ -344,6 +346,12 @@ box-shadow: 10px 10px 50px rgba(23, 23, 23, 0.16);
 background-image: url("img/ZenBG.png");
 padding-left: 40px;
 padding-right: 40px;
+border-radius: 10px;
+transition: all .2s ease-in-out;
+}
+
+.event:hover{
+  transform: scale(1.05);
 }
 
 .eventTitle {
@@ -370,6 +378,7 @@ padding-right: 40px;
   font-family: raleway;
   margin-top: 30px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .eventButton {
