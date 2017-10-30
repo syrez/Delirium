@@ -324,6 +324,28 @@ header {
 
 }
 
+.eventContainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.event {
+  box-sizing: border-box;
+width: 400px;
+margin-left: 2%;
+margin-right: 2%;
+height: 300px;
+margin-top: 50px;
+box-shadow: 10px 10px 50px rgba(23, 23, 23, 0.16);
+background-image: url("img/ZenBG.png");
+padding-left: 40px;
+padding-right: 40px;
+}
+
 .eventTitle {
   text-align: center;
   font-size: 29px;
