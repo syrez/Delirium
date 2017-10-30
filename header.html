@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
     <link rel="stylesheet" href="header.css">
 </head>
 <body>
@@ -14,11 +15,11 @@
         <div id="nav_bg">
             <nav>
                 <ul id="menu">
-                    <li>The Bar</li>
-                    <li>News</li>
-                    <li>Social</li>
-                    <li>Gallery</li>
-                    <li>Contact</li>
+                    <li id="theBar_link">The Bar</li>
+                    <li id="news_link">News</li>
+                    <li id="social_link">Social</li>
+                    <li id="gallery_link">Gallery</li>
+                    <li id="contact_L">Contact</li>
                 </ul>
             </nav>
         </div>
@@ -46,5 +47,43 @@
         </div>
     </div>
 </div>
+<div id="social">
+    <h1 id="social_title" class="section_title">Social Networks</h1>
+    <div id="social_bg">
+        <h3>Follow Us On</h3>
+        <div id="icons">
+            <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-snapchat-square fa-3x" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
 </body>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js"></script>-->
+<script>
+
+    var barLink = document.querySelector('#theBar_link');
+    var sociaLink = document.querySelector('#social_link');
+    var social = document.querySelector('#social');
+    var thebar = document.querySelector('#about');
+
+
+    barLink.addEventListener("click", function () {
+        window.scroll({
+            top: thebar.offsetTop,
+            left: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    sociaLink.addEventListener("click", function () {
+        window.scroll({
+            top: social.offsetTop,
+            left: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
 </html>
